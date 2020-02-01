@@ -1,0 +1,62 @@
+@import "./colors";
+
+header {
+  background-color: whitesmoke;
+  padding-top: 10px;
+}
+header nav {
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(90deg, $secondary, $tertiary);
+  border-image-slice: 1;
+}
+nav,
+#socialMedia {
+  margin: auto;
+  width: 100%;
+}
+nav ul li a img {
+  width: 80px;
+}
+nav ul {
+  padding: 0;
+  text-align: center;
+  padding-bottom: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: $tertiary;
+}
+nav ul li:active {
+  text-decoration: underline;
+  text-decoration-color: $secondary;
+}
+
+nav ul li a {
+  font-weight: bold;
+  display: block;
+}
+
+header nav ul li a {
+  font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+  header nav {
+    padding: 7px 0;
+    border-bottom: 7px solid;
+    border-image-source: linear-gradient(90deg, $secondary, $tertiary);
+    border-image-slice: 1;
+  }
+  header nav ul {
+    display: flex;
+    width: 60%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav ul li {
+    padding: 10px 5px;
+  }
+}

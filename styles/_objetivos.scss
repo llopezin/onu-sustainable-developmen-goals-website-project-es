@@ -1,0 +1,85 @@
+@import "./colors";
+
+.imgContainer {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.imgContainer img {
+  width: 100%;
+}
+
+#objetivosList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#objetivosList li {
+  padding: 50px 20px;
+  border-bottom: solid 1px lightgray;
+  text-align: center;
+}
+
+#objetivosList li:last-child {
+  border-bottom: none;
+}
+
+#objetivosList li span {
+  float: right;
+}
+
+#objetivosList h2 {
+  margin-bottom: 0;
+}
+
+#objetivosList p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#objetivosList h2 a:visited {
+  color: $main;
+}
+
+#breadCrumbMenu {
+  padding: 20px 0 0 0;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#breadCrumbMenu a:visited {
+  color: black;
+}
+@media (min-width: 750px) {
+  #objetivosList {
+    max-width: 1000px;
+    width: 65%;
+    margin: auto;
+  }
+  #objetivosList li {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+  #objetivosList li div {
+    width: 50%;
+    text-align: left;
+    padding: 5px;
+  }
+  #objetivosList li:nth-child(even) {
+    margin-left: 33%;
+  }
+  #objetivosList li div img {
+    max-width: 250px;
+  }
+  #objetivosList .imgContainer {
+    text-align: center;
+  }
+  #objetivosList li span {
+    float: left;
+  }
+}

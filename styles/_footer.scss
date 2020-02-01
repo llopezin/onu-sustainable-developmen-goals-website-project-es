@@ -1,0 +1,60 @@
+@import "./colors";
+
+footer {
+  border-top: 7px solid;
+  border-image-source: linear-gradient(90deg, $secondary, $tertiary);
+  border-image-slice: 1;
+  background-color: whitesmoke;
+}
+footer div,
+footer a {
+  width: 95%;
+  margin: auto;
+}
+
+footer p {
+  text-align: center;
+}
+
+#socialMedia ul {
+  padding: 0;
+  text-align: center;
+}
+
+.fa-arrow-up {
+  margin-left: 90%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+footer ul li a {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  footer {
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+  #footerMainContentWrap {
+    display: flex;
+  }
+  #footerMainContentWrap div {
+    text-align: center;
+  }
+  #footerMainContentWrap div ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  #socialMedia ul li a {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75em;
+  }
+  #socialMedia ul li a:hover {
+    text-decoration: none;
+  }
+  #authorship {
+    margin-top: 20px;
+  }
+}

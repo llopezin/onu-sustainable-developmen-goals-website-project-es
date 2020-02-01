@@ -1,0 +1,50 @@
+@import "./colors";
+
+#finDeLaPobrezaLogo {
+  margin-top: 20px;
+}
+#objetivoInsideNav {
+  padding: 0;
+  text-align: center;
+}
+
+#datosDestacables,
+#enlaces,
+#metas {
+  text-align: left;
+  margin-top: 20px;
+}
+#datosDestacables ul,
+#enlaces ul,
+#metas ol {
+  padding-left: 25px;
+  padding-right: 10px;
+}
+#datosDestacables ul li,
+#enlaces ul li {
+  list-style-type: disc;
+}
+
+@media (min-width: 800px) {
+  #finDeLaPobrezaMainContent {
+    width: 60%;
+    max-width: 1000px;
+  }
+  #columnRight {
+    display: inline-block;
+    width: 50%;
+    padding: 90px 30px 30px 30px;
+  }
+  #columnLeft {
+    float: left;
+    width: 40%;
+    padding-top: 30px;
+  }
+  #breadCrumbMenuObjetivo1,
+  #objetivoInsideNav {
+    text-align: left;
+  }
+  #finDeLaPobrezaLogo {
+    margin-right: 50%;
+  }
+}
