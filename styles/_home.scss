@@ -19,6 +19,10 @@
   width: 50%;
 }
 
+figure {
+  margin: 30px auto;
+}
+
 .videoFluid {
   position: relative;
   display: block;
@@ -54,12 +58,13 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    max-width: 1080px;
   }
   #imgGrid a {
-    /* max-width: 150px; */
+    max-width: 250px;
     flex: 1 1 400px;
-    margin: 10px;
+    margin: 10px 10px auto 10px;
   }
   #imgGrid a:last-child img {
     padding: 20px;
